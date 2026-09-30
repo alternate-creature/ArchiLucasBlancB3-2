@@ -3,8 +3,14 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     //Projectile has no target or direction
-    float projectileSpeed = 1f;
+    public float projectileSpeed = 1f;
     int projectileDmg = 1;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out Enemy enemy))
+            enemy.TakeDMG(projectileDmg);
+    }
 
     private void Hit()
     {
@@ -13,8 +19,6 @@ public class Projectile : MonoBehaviour
 
     private void DoDamage()
     {
-        //I don't know the difference between Hit and DoDamage
-        //There is no target
-        //The projectile cannot move
+        
     }
 }

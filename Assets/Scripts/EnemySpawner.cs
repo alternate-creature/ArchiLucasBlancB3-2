@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Base _base; //this did not exist before
     [SerializeField] EconomyManager economy; //this did not exist before
 
-    private void SpawnEnemy(int amount, float interval)
+    public void SpawnEnemy(int amount, float interval)
     {
         //parameters were originally both named "x" in the diagram
         //this function cannot be called by WaveManager as intended because it is private

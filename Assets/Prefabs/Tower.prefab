@@ -104,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700458e38f9c8e049935e9afe72e7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: -227269445110692852, guid: 06236f281c8859c44b3e44429669d9ec, type: 3}
   towerCost: 10
-  towerRange: 1
+  towerRange: 5
   attackSpeed: 1
   target: {fileID: 0}

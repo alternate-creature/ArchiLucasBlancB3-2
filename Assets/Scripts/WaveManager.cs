@@ -17,7 +17,7 @@ public class WaveManager : MonoBehaviour
     {
         currentWave += 1;
 
-        //enemySpawner.SpawnEnemy(1, enemySpawnDelay);
+        spawner.SpawnEnemy(1, enemySpawnDelay);
         //enemySpawner's SpawnEnemy is set to private
         //I honestly have no clue what I should put as an int
 
@@ -26,7 +26,7 @@ public class WaveManager : MonoBehaviour
         enemyCount += 1;
     }
 
-private void EndWave()
+    private void EndWave()
     {
         WaveStart();
     }
